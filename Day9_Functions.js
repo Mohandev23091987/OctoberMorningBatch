@@ -137,6 +137,9 @@ console.log('connect to DB')
 function mainfunction(message, callback){
 
     console.log(message)
+    //callback(5,7);
+
+    //
     callback(5,7);
 
 }
@@ -146,6 +149,8 @@ function divisionOfNumbers(num1,num2){
 }
 
 mainfunction('do division',divisionOfNumbers)
+
+
 
 
 
