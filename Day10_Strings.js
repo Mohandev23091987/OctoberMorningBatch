@@ -107,4 +107,160 @@ let numbersting = '1234gjhgj6456^**^*^&*'
 
 
 
+//slice 
+
+let str13 = 'playwright'
+console.log(str13.slice(0,4))
+console.log(str13.slice(4))
+
+//today assignment substring vs slice
+
+
+//split  it will take a delimiter and split the string into array of strings
+
+let str14 = 'I am mohan' // ['I','am','mohan']
+
+let arr = str14.split(' ')
+console.log(arr)
+
+let str15 = 'ravaviarama'  // [r,v,vi,r ,m]
+
+console.log(str15.split('a'))   // "Vegetables,fruits,grains"
+
+//repeat  it will repeat the string n times
+
+let str16 = '*'
+console.log(str16.repeat(20))
+
+
+//trim     "            fruits     "  => "fruits"
+//trimStart "fruits     ""
+//trimEnd  "       fruits"
+
+let str17 = '     fruits     '
+
+console.log(str17.trim())
+
+//padding 
+//padStart  it will add padding to the start of the string
+//padEnd  it will add padding to the end of the string
+
+console.log("5".padStart(3,'0') )
+
+
+
+
+//+
+
+console.log('hello'+ ' ' + 'ram') 
+
+console.log('hello '+ 'ram')
+console.log('hello'+ ' ram')
+//
+
+console.log('hello'.concat(' ','ram'," how are you") ) 
+
+
+// "ravi".length => 4
+
+//  index or charAt   => "ravi"[1] => a  "Ravi".charAt(1) => a
+
+
+//  "   Ravi   ".trim()
+
+// "Ravi is good"
+
+// "   ramesh and raju are good    "
+
+console.log("Ravi is good".substring(8))
+
+let arrayOfwords = "   ramesh and raju and ravi and vent are good    ".trim().split(' ')
+
+console.log(arrayOfwords[arrayOfwords.length-1] )
+
+// "ravi".includes('a') => true
+
+
+
+//reverse a string 
+
+let strname = "ravi"  //=> ivar 
+let rev = ""  // r
+
+
+// for(let char of strname ){   // a
+// rev = char +rev   // i+v+ a+r
+// }
+
+// console.log(rev)
+
+
+for(let i=strname.length-1; i>=0; i--)
+{
+    rev = rev + strname[i];
+}
+
+console.log(rev)
+
+//["p","l","a","y","w","r","i","g","h","t"]
+//["t","h","g","i","r","w","a","l","p"]
+console.log("playwright".split('').reverse().join(''))
+
+
+//palindrome 
+
+//count of vowels in a string
+
+
+//occurance programs   => map or object
+//count each character in a string 
+//count each word in a sentence 
+//duplicate characters 
+//unique characters 
+//first non repeating character
+//first duplicate character
+
+
+let str18 = 'mmoohan'
+let charcount ={}
+//{p:2,}
+for(let char of str18){  //m
+if(charcount[char]){  //1
+ charcount[char] = charcount[char]+1
+}else {
+charcount[char] = 1
+}
+}
+
+console.log(charcount)
+
+for(let char in charcount){
+
+if(charcount[char]==1){
+
+  console.log(char + " occurance is " + charcount[char])
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
