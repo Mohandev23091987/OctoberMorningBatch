@@ -55,4 +55,18 @@ connectToDB()
 
 
 
+let promise2 = new Promise((resolve,reject)=>{
+
+    reject('failure')
+
+})
+
+promise2
+.then()
+.catch((error)=>{console.log(error)})
+.finally()
+
+
+
+
 
