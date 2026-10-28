@@ -36,5 +36,15 @@ let Id:number|string;  // strict checking
  //interface
 
 
+ function displayId(id: number|string):string{
+    if(typeof id === 'string'){
+        return id.toUpperCase();
+    }else{
+        return 'error'
+    }
+}
+console.log(displayId("3129"));
+
+
 
 
